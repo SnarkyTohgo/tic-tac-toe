@@ -17,15 +17,8 @@ var headTitle = "Tic-Tac-Toe";
 ReactDOM.render(headTitle, head);
 
 var checkWinner = function checkWinner(squares) {
-    // Array contendo todos os casos possíveis de vitória
-    // em que cada elemento dos arrays que ele contém
-    // corresponde a uma posição no tabuleio
     var lines = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]];
 
-    // Este for vai percorrer todas as linhas do nosso tabuleiro
-    // primeiro na horizontal, depois na vertical e por fim na diagonal
-    // se todos os elementos de uma linha forem iguais ele devolve o jogador 
-    // vendedor, either 'X' or 'O'
     var _iteratorNormalCompletion = true;
     var _didIteratorError = false;
     var _iteratorError = undefined;

@@ -6,9 +6,6 @@ ReactDOM.render(headTitle, head)
 
 
 const checkWinner = squares => {
-    // Array contendo todos os casos possíveis de vitória
-    // em que cada elemento dos arrays que ele contém
-    // corresponde a uma posição no tabuleio
     const lines = [
         [0, 1, 2],
         [3, 4, 5],
@@ -20,10 +17,6 @@ const checkWinner = squares => {
         [2, 4, 6]
     ] 
 
-    // Este for vai percorrer todas as linhas do nosso tabuleiro
-    // primeiro na horizontal, depois na vertical e por fim na diagonal
-    // se todos os elementos de uma linha forem iguais ele devolve o jogador 
-    // vendedor, either 'X' or 'O'
     for (let line of lines) {
         const [a, b, c] = line
         
